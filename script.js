@@ -22,7 +22,7 @@ document.addEventListener("keydown",function(event){
 
 setTimeout(function (){
     dismissWS();
-},0)
+},500)
 
 let bChar = document.querySelector("blink-char");
 setInterval(function (){

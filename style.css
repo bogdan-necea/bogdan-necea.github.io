@@ -29,6 +29,7 @@ p{
     padding: 12px;
     display:none;
     position: relative;
+    align-items: center;
 }
 
 .frame::before{
