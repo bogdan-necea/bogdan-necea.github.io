@@ -1,3 +1,4 @@
+* README.md generated using Copilot
 # Snake Game
 
 ## Overview
