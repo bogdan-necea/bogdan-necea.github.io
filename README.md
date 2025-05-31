@@ -1,4 +1,4 @@
-* README.md generated using Copilot
+'*'README.md generated using Copilot
 # Snake Game
 
 ## Overview
@@ -34,7 +34,7 @@ This is a classic Snake game implemented in pure HTML, CSS, and JavaScript. The 
 ### Controls
 
 - Arrow keys change the snake's direction, with logic to prevent reversing into itself.
-- The snake moves automatically at a speed that increases as it grows longer.
+- The snake moves automatically at a speed that decreases as it grows longer.
 
 ### Game Loop
 
@@ -63,10 +63,6 @@ This is a classic Snake game implemented in pure HTML, CSS, and JavaScript. The 
 3. Eat the red fruit (`■`) to grow longer and increase your score.
 4. Avoid running into your own tail.
 5. When the game ends, press `Enter` to restart.
-
-## Screenshots
-
-![Snake Game Screenshot](../res/snake.png)
 
 ---
 
