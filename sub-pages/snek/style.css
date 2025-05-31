@@ -17,13 +17,22 @@ body{
     overflow: none;
 }
 
-p{
+.game-grid{
     margin:0;
     line-height: 20px;
     letter-spacing: -2px;
     user-select: none;
     -webkit-user-select: none; /* For Safari */
     -ms-user-select: none;     /* For IE/Edge */
+}
+
+.death-screen{
+    white-space:pre;
+    font-size: 8pt;
+    transform: skewX(-25deg);
+    user-select:none;
+    display: none;
+    margin: 0;
 }
 
 red{
@@ -34,4 +43,7 @@ lime{
 }
 green{
     color:green;
+}
+gray{
+    color:#1a1a1a;
 }
