@@ -87,7 +87,7 @@ function gameOver(){
     isDead=true;
     document.querySelector(".game-grid").style.display = "none";
     document.querySelector(".death-screen").style.display = "block";
-    document.querySelector(".death-screen").innerHTML += "Score:"+ (length-3);
+    document.querySelector(".death-screen").innerHTML += "Press &lt;Enter&gt; to continue ▁<br>Score:"+ (length-3);
     document.addEventListener("keydown", function(event){
         if(event.key=="Enter"){
             this.location.reload();
