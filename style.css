@@ -52,6 +52,11 @@ a, a:visited{
     padding: 0px 10px 0px 10px;
 }
 
+.hover > *:hover,.hover>*:focus, .hover >*:hover::before{
+    background-color: white;
+    color:black;
+}
+
 .grid-horizontal{
     display:grid;
     grid-auto-flow: column;

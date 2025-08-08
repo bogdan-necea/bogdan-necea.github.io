@@ -1,0 +1,79 @@
+:root{
+    /*----measures----*/
+    --small:8px;
+    --medium:12px;
+    --large:16px;
+    --extra:20px;
+    --full:50%;
+
+    /*----colors----*/
+    --hue: 200;
+    --bg-lo: hsl(calc(var(--hue) + 15), 21%, 3%);
+    --bg-md: hsl(calc(var(--hue) + 17), 18%, 5%);
+    --bg-hi: hsl(calc(var(--hue) + 19), 15%, 8%);
+    --bg-hi-active: hsl(calc(var(--hue) + 21), 12%, 12%);
+
+    --on-bg-primary: hsl(var(--hue), 20%, 80%);
+    --on-bg-secondary: hsl(var(--hue), 15%, 60%);
+
+    --accent: hsl(calc(var(--hue) + 33), 40%, 20%);
+    --accent-active: hsl(calc(var(--hue) + 33), 30%, 30%);
+    --on-accent: hsl(calc(var(--hue) + 27), 70%, 80%);
+}
+
+html,body{
+    height: 100%;
+}
+
+*{
+    user-select: none;
+    box-sizing: border-box;
+    font: 500 var(--large) 'Roboto', sans-serif;
+    color: var(--on-bg-primary);
+    fill: var(--on-bg-primary);
+    outline: var(--bg-hi-active);
+}
+
+p,html,body{
+    margin: 0;
+}
+
+.header{
+    font-size: var(--extra);
+}
+
+.lo{
+    background-color: var(--bg-lo);
+    padding: var(--large);
+    gap:var(--large);
+}
+
+.md{
+    background-color: var(--bg-md);
+    border-radius: var(--medium);
+    border: solid 1px var(--bg-hi);
+    padding: var(--medium);
+    gap: var(--medium);
+}
+
+.hi{
+    background-color: var(--bg-hi);
+    border-radius: var(--small);
+    padding: var(--small) var(--medium);
+    gap: var(--small);
+}
+
+.accent{
+    color: var(--on-accent);
+    fill: var(--on-accent);
+    background-color: var(--accent);
+}
+
+.accent:hover{
+    background-color: var(--accent-active);
+}
+
+.secondary,input::placeholder{
+    color: var(--on-bg-secondary);
+    fill: var(--on-bg-secondary);
+}
