@@ -1,83 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-html,body{
-    height:100%;
-    margin:0;
-}
+@import url('utils/style-lib.css');
+
 body{
-    background-color: black;
-    color: white;
-    font-family: Fira Code;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: flex-start;
-    user-select: none;
-}
-p{
-    margin:0;
-}
-
-a, a:visited{
-    text-decoration: none;
-    color: white;
-    white-space: pre;
-}
-
-.skewed{
-    font-size: 8pt;
-    transform: skewX(-25deg);
-    white-space: pre;
-    user-select: none;
-    transition: opacity 0.5s;
-    opacity:1;
-}
-
-.frame{
-    border: 2px solid white;
-    margin: 12px;
-    padding: 12px;
-    display:none;
-    position: relative;
-    align-items: center;
-    height: max-content;
-}
-
-.frame::before{
-    content: attr(data-f-tag);
-    position:absolute;
-    background-color: black;
-    top:-12px;
-    left:6px;
-    z-index: 10;
-    padding: 0px 10px 0px 10px;
-}
-
-.hover > *:hover,.hover>*:focus, .hover >*:hover::before{
-    background-color: white;
-    color:black;
-}
-
-.grid-horizontal{
-    display:grid;
-    grid-auto-flow: column;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.grid-vertical{
-    display:grid;
-    width:100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+#main{
+    width: 75%;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+#pfp{
+    aspect-ratio: 1 / 1 ;
+    width: 128px;
+    height: 128px;
+}
+
+#bio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--small);
+}
+
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: top;
+}
+
+.subtitle{
+    font-size: var(--extra);
+    display: grid;
+    grid-template-columns: max-content auto;
     align-items: center;
-}
-
-.img-small{
-    height: 64px;
-    width: 64px;
-}
-
-.img-small{
-    height: 96px;
-    width: 96px;
+    gap: var(--small);
 }

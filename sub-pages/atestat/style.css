@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --small:8px;
+    --medium:16px;
+}
+
+*{
+    font-family: 'Fira Code', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    box-sizing: border-box;
+    background-color: #000;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+}
+/*windows components styling*/
+.window{
+    position: relative;
+    width: 960px; height: 540px;
+    border: 2px solid #fff;
+}
+
+.window::before{
+    content:attr(data-title);
+    display: flex;
+    position: absolute; left: 8px;
+    transform: translateY(-50%);
+    background-color: #000;
+    border: 2px solid #fff;
+    padding: var(--small);
+}
+
+.controls{
+    position: absolute; right: 8px;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    height: 36px;
+
+    padding: 4px;
+    gap: 4px;
+    border: 2px solid #fff;
+}
+
+.controls > img{
+    padding: 4px;  
+    box-sizing: content-box; 
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.controls > img:hover {
+    filter: invert(1);
+    transform: scale(0.95);
+}
+
+
+/*popup styling*/
+.popup{
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 240px; height: 80px;
+
+    gap: var(--small);
+}
+
+.choice{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    position: absolute; bottom: 0%; right:50%;
+    transform: translate(50%,-30%);
+
+    gap: var(--small);
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 150px;
+    width: max-content;
+
+    padding: var(--small);
+    border: 2px solid #fff;
+    gap: var(--small);
+
+    color: #fff;
+    text-decoration: none;
+
+    cursor: pointer;
+    
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.button:hover{
+    filter: invert(1);
+    font-weight: bold;
+    transform: scale(0.95);
+    border: 2px solid #000;
+}
+
+/*general styling*/
+.hidden{
+    display: none;
+}
+
+.icon{
+    display: inline-block;
+    width: 16px; height: 16px;
+}
+
+/*game select*/
+.grid{
+    position: relative;
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    width: 860px; height: 400px;
+    gap: var(--small);
+
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tile{
+    margin-top: var(--medium);
+    position: relative;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.tile:hover{
+    filter: invert(1);
+    transform: scale(0.95);
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+.tile::before{
+    content:attr(data-title);
+    display: flex;
+    position: absolute;
+    bottom: 0; right: var(--small);
+    transform: translateY(50%);
+    background-color: #000;
+    border: 2px solid #fff;
+    padding: var(--small);
+
+    width: max-content;
+}
+
+
+.cover{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    object-fit: cover;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atestat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window" data-title="&lt/Select a game...&gt">
+        <div class="controls">
+            <img src="res/line.png" height="16px" id="btn-pause">
+            <img src="res/max.png" height="16px" id="btn-min-max">
+            <img src="res/close.png" height="16px" id="btn-close">
+        </div>
+        <div class="grid">
+            <a class="tile" data-title="&lt/Minesweeper&gt" href="minesweeper/game.html">
+                <img src="res/minesweeper.static.png" data-a-src="res/minesweeper.gif" data-src="res/minesweeper.static.png" class="cover">
+            </a>
+            <div class="tile" data-title="&lt/Tic Tac Toe&gt">
+                <img src="res/tictactoe.static.png" data-a-src="res/tictactoe.gif" data-src="res/tictactoe.static.png" class="cover">
+            </div>
+            <div class="tile" data-title="&lt/Snake&gt">
+                <img src="res/snake.static.png" data-a-src="res/snake.gif" data-src="res/snake.static.png" class="cover">
+            </div>
+            <div class="tile" data-title="&lt/Highr Lower&gt">
+                <img src="res/higherlower.static.png" data-a-src="res/higherlower.gif" data-src="res/higherlower.static.png" class="cover">
+            </div>
+            <div class="tile" data-title="&lt/Rock Paper Scissors&gt">
+                <img src="res/rockpaperscissors.static.png" data-a-src="res/rockpaperscissors.gif" data-src="res/rockpaperscissors.static.png" class="cover">
+            </div>
+            <div class="tile" data-title="&lt/Flip a coin&gt">
+                <img src="res/coin.static.png" data-a-src="res/coin.gif" data-src="res/coin.static.png" class="cover">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="window popup hidden" data-title="&lt/Go to main menu?&gt" id="pop-close" >
+        <div class="choice">
+            <a class="button" id="btn-cancel">
+                <img class="icon" src="res/close.png">Cancel
+            </a>
+            <a class="button" id="btn-ok" href="index.html">
+                <img class="icon" src="res/ok.png">Ok
+            </a>
+        </div>
+    </div>
+
+    <div class="window popup hidden" data-title="&lt/Game is paused&gt" id="pop-pause">
+        <div class="choice">
+            <div class="button" id="btn-play"><img class="icon" src="res/play.png">Unpause</div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

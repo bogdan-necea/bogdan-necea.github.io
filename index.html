@@ -6,60 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
 </head>
-<body>
-
-<welcomeScreen class="skewed">
-┏━┳━┳━┓┏━━━━━┓┏━┓    ┏━━━━━┓┏━━━━━┓┏━━━━━┓┏━━━━━┓
-┃ ┃ ┃ ┃┃ ╺━━━┫┃ ┃    ┃ ┏━━━┛┃  ╻  ┃┃ ╻ ╻ ┃┃ ╺━━━┫
-┃ ╹ ╹ ┃┃ ╺━━━┫┃ ┗━━━┓┃ ┗━━━┓┃  ╹  ┃┃ ┃ ┃ ┃┃ ╺━━━┫
-┗━━━━━┛┗━━━━━┛┗━━━━━┛┗━━━━━┛┗━━━━━┛┗━┻━┻━┛┗━━━━━┛
-    Press &lt;Enter&gt; to continue<blink-char>▁</blink-char>
-</welcomeScreen>
-<div>
-    <div class="frame" data-f-tag="About">
-        <div class="grid-horizontal">
-            <div class="frame" data-f-tag="Pfp">
-                <img class="img-small" src="res/genericPfpPrimary.png">
-            </div>
-                
-            <div class="grid-vertical" >
-                <p class="frame" data-f-tag="Name">
-                    Bogdan Necea
-                </p>
-                <p class="frame" data-f-tag="Description">
-                    Hi, this is a landing page for some of my HTML/CSS/JS projects.
+<body class="lo">
+    <div id="main">
+        <div class="md" id="header">
+            <img id="pfp" src="https://avatars.githubusercontent.com/u/213339336?s=128&v=4">
+            <div id="bio" class="hi">
+                <p class="subtitle">Bogdan Necea</p>
+                <p>
+                    <p class="subtitle">
+                        <img class="icon" src="https://img.icons8.com/fluency-systems-filled/ffffff/48/user.png">
+                        About:
+                    </p>
+                    Wannabe web-developer
                 </p>
             </div>
         </div>
     </div>
-    <div class="frame" data-f-tag="Links">
-        <div class="grid-horizontal">
-            <a href="https://github.com/bogdan-necea">Github | </a>
-            <a href="https://modrinth.com/user/M3rljn">Modrinth | </a>
-            <a href="https://www.instagram.com/bogdan.necea/">Instagram</a>
-        </div>
-    </div>
-    <div class="frame" data-f-tag="Projects">
-        <div class="grid-vertical hover">
-            <a class="frame" data-f-tag="prj1" href="sub-pages/snek/index.html">
-                <div class="grid-horizontal">
-                    <img class="img-small" src="res/snake.png">
-                    <p>  Snake</p>
-                </div>
-            </a>
-            <a class="frame" data-f-tag="prj2" href="sub-pages/qr-generator/index.html">
-                <div class="grid-horizontal">
-                    <img class="img-small" src="res/snake.png">
-                    <p>  QR Generator</p>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-
-
 </body>
-<script src="script.js"></script>
 </html>

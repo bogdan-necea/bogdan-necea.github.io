@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="minesweeper.css">
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <div class="window" data-title="&lt/Minesweeper [00:00:00] [--×⬤] &gt">
+        <div class="controls">
+            <img src="../res/line.png" height="16px" id="btn-pause">
+            <img src="../res/max.png" height="16px" id="btn-min-max">
+            <img src="../res/close.png" height="16px" id="btn-close">
+        </div>
+        <div class="game-container hidden"></div>
+    </div>
+
+    <div class="window popup hidden" data-title="&lt/Go to main menu?&gt" id="pop-close" >
+        <div class="choice">
+            <a class="button" id="btn-cancel">
+                <img class="icon" src="../res/close.png">Cancel
+            </a>
+            <a class="button" id="btn-ok" href="../index.html">
+                <img class="icon" src="../res/ok.png">Ok
+            </a>
+        </div>
+    </div>
+
+    <div class="window popup " data-title="&lt/Select dificulty&gt" id="pop-diff">
+        <div class="choice">
+            <div class="button" id="btn-diff">Easy</div>
+            <div class="button" id="btn-diff">Medium</div>
+            <div class="button" id="btn-diff">Hard</div>
+        </div>
+    </div>
+
+    <div class="window popup hidden" data-title="&lt/Game is paused&gt" id="pop-pause">
+        <div class="choice">
+            <div class="button" id="btn-play"><img class="icon" src="../res/play.png">Unpause</div>
+        </div>
+    </div>
+
+    <div class="window popup hidden" data-title="&lt/Game over&gt" id="pop-lose">
+        <div class="choice">
+            <div class="button" id="btn-replay"><img class="icon" src="../res/play.png">Play again</div>
+        </div>
+    </div>
+
+    <div class="window popup hidden" data-title="&lt/You win! [time-here]&gt" id="pop-win"> 
+        <div class="choice">
+            <div class="button" id="btn-replay"><img class="icon" src="../res/play.png">Play again</div>
+        </div>
+    </div>
+</body>
+<script src="../script.js"></script>
+<script src="minesweeper.js"></script>
+</html>
