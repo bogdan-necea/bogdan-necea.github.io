@@ -25,7 +25,7 @@ body{
 /*windows components styling*/
 .window{
     position: relative;
-    width: 960px; height: 540px;
+    width: 54vw; height: 54vh;
     border: 2px solid #fff;
 }
 
