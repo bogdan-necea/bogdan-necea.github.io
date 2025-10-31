@@ -156,7 +156,6 @@ function generateMines(fX,fY){ // Place mines randomly, avoiding already placed 
         if(isMine(x,y)|| Math.floor((fX-x)**2+(fY-y)**2)<9) i--;
         else{
             tile(x,y).classList.add("mine");
-            tile(x,y).style.backgroundColor="red";
         }
     }
     generateNumbers();
