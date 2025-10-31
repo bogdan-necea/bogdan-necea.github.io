@@ -188,15 +188,15 @@ function setDifficulty(){
             switch(btn.innerHTML){
                 case "Easy":
                     gridSize=8; minesNum=16;
-                    gameContainer.style.gridTemplate=`repeat(${gridSize}, 4.8vh) / repeat(${gridSize}, 4.8vh)`;
+                    gameContainer.style.gridTemplate=`repeat(${gridSize}, 32px) / repeat(${gridSize}, 32px)`;
                     break;
                 case "Medium":
                     gridSize=16; minesNum=48;
-                    gameContainer.style.gridTemplate=`repeat(${gridSize}, 3.2vh) / repeat(${gridSize}, 3.2vh)`;
+                    gameContainer.style.gridTemplate=`repeat(${gridSize}, 24px) / repeat(${gridSize}, 24px)`;
                     break;
                 case "Hard":
                     gridSize=24; minesNum=96;
-                    gameContainer.style.gridTemplate=`repeat(${gridSize}, 2.4vh) / repeat(${gridSize}, 2.4vh)`;
+                    gameContainer.style.gridTemplate=`repeat(${gridSize}, 16px) / repeat(${gridSize}, 16px)`;
                     break;
             }
             gameContainer.classList.remove("hidden");
