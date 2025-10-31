@@ -25,7 +25,7 @@ body{
 /*windows components styling*/
 .window{
     position: relative;
-    width: 54vw; height: 54vh;
+    width: 90vw; height: 90vh;
     border: 2px solid #fff;
 }
 
@@ -128,7 +128,7 @@ body{
     display: grid;
     
     grid-template-columns: auto auto auto;
-    width: 860px; height: 400px;
+    width: 64vw; height: 64vh;
     gap: var(--small);
 
     top: 50%; left: 50%;
@@ -168,6 +168,6 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 64px;
+    width: 4vw;
     object-fit: cover;
 }
